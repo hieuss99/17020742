@@ -1,13 +1,19 @@
-public class main {
-     
+import Week3.Task1.Week3Task1;
+import Week3.Task2.Fraction;
+import Week4.Week4;
+
+public class Main {
+
     public static void main(String[] args) {
-        Fraction phanSo1=new Fraction(16,3);    // tạo phân số có tử = 16 và mẫu = 4
-        Fraction phanSo2=new Fraction(4,8); // tạo phân số có tử = 4 và mẫu = 8
-         
-        // gọi phương thức cộng, trừ, nhân, chia 2 phân số
-        phanSo1.add(phanSo2);
-        phanSo1.subtract(phanSo2);
-        phanSo1.multiple(phanSo2);
-        phanSo1.divide(phanSo2);
+        Week3Task1 week3Task1 = new Week3Task1();
+        System.out.println("running");
+        week3Task1.gcd(11, 22);
+        System.out.println(week3Task1.fibonaci(6));
+        week3Task1.sieveEratosthenes(34);
+        Fraction fraction1 = new Fraction(3, 4);
+        Fraction fraction2 = new Fraction(3, 4);
+        fraction1.multiply(fraction2);
+        Week4 week4 = new Week4();
+        week4.max2Int(5, 2);
     }
-     
+}
